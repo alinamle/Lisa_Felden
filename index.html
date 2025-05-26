@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>So klingt Lisa Felden</title>
   <style>
     body {
@@ -13,18 +14,20 @@
       align-items: center;
       justify-content: center;
       font-family: sans-serif;
-      gap: 30px;
+      gap: 40px;
+      font-size: 1.5rem;
     }
 
     h1 {
-      font-size: 20px;
+      font-size: 2rem;
       color: #333;
+      text-align: center;
     }
 
     .player-container {
       position: relative;
-      width: 150px;
-      height: 150px;
+      width: 220px;
+      height: 220px;
     }
 
     .progress-ring {
@@ -34,7 +37,7 @@
     .progress-ring circle {
       fill: none;
       stroke: #f3eeee;
-      stroke-width: 8;
+      stroke-width: 10;
       stroke-linecap: round;
     }
 
@@ -43,8 +46,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 80px;
-      height: 80px;
+      width: 110px;
+      height: 110px;
       background-color: #f3eeee;
       border-radius: 50%;
       border: none;
@@ -56,8 +59,8 @@
     }
 
     .play-button svg {
-      width: 24px;
-      height: 24px;
+      width: 36px;
+      height: 36px;
       fill: black;
     }
   </style>
@@ -67,14 +70,14 @@
   <h1>So klingt Lisa Felden</h1>
 
   <div class="player-container">
-    <svg class="progress-ring" width="150" height="150">
-      <circle id="progress-ring" cx="75" cy="75" r="65" stroke="#eee" />
+    <svg class="progress-ring" width="220" height="220">
+      <circle id="progress-ring" cx="110" cy="110" r="95" stroke="#eee" />
     </svg>
     <button class="play-button" onclick="toggleAudio()">
       <svg id="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
     </button>
     <audio id="audio">
-      <source src="LisaFelden.mp3" type="audio/mpeg">
+      <source src="lisa.mp3" type="audio/mpeg">
     </audio>
   </div>
 
